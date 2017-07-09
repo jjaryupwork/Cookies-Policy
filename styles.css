@@ -80,6 +80,9 @@ font-size : 12px;
 text-align : center;
 position : fixed;
 cursor : pointer;
+text-decoration: none;
+border: 1px solid white;
+border-radius: 5px;
 }
 .closediv .close {
 color : white;
@@ -89,6 +92,10 @@ display : flex;
 text-align : center;
 position : fixed;
 cursor : pointer;
+}
+.close:hover{
+	color: gold;
+	text-transform: gold;
 }
 .closediv {
 display : inline-block;
