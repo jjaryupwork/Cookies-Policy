@@ -1,31 +1,97 @@
-button{
-	position:absolute;
-	left: 1000px;
-	margin:top;
-	margin:left;
+button {
+position : absolute;
+left : 900px;
+background : #0a97f5;
+background : linear-gradient(0deg, #0d3045, #0a97f5 40%);
+border-radius : 12px;
+font-family : Georgia;
+color : #eaf20c;
+font-size : 28px;
+padding : 10px 10px 10px 10px;
+border : #c8fc1f solid 2px;
+text-decoration : none;
+}
+button:hover {
+background : #052b45;
+background : linear-gradient(0deg, #0a97f5, #0d3045 40%);
+text-decoration : none;
+}
+body {
+margin : 0;
+}
+.Cont {
+background-image : url("./background2.jpg");
+background-repeat : no-repeat;
+height : 100vh;
+background-size : cover;
+display : flex;
+flex-direction : column;
+justify-content : center;
+align-items : center;
+margin : 0;
+clear : left;
+}
+.giraffe {
+position : fixed;
+margin : 0;
+bottom : 50px;
+}
+.rocket {
+position : fixed;
+left : 250px;
+bottom : 50px;
+}
+.cookiesheader {
+width : 100%;
+font-size : 12px;
+height : 54px;
+background-color : #262626;
+z-index : 100;
+line-height : 12px;
+border-bottom : 2px solid white;
+white-space : nowrap;
+position : fixed;
+}
+.infodiv, .closediv, .learnmorediv {
+height : 38px;
+width : 200px;
+display : flex;
+display : inline-block;
+margin : 10px 80px;
+padding : 0 130px;
+text-align : center;
+}
+.infodiv p {
+display : flex;
+float : left;
+color : white;
+font-size : 12px;
+text-align : center;
+width : 500px;
+cursor : pointer;
+position : fixed;
+}
+.learnmorediv a {
+display : flex;
+float : left;
+color : white;
+line-height : 32px;
+font-size : 12px;
+text-align : center;
+position : fixed;
+cursor : pointer;
+}
+.closediv .close {
+color : white;
+font-size : 12px;
+border-left : 1px solid #333333;
+display : flex;
+text-align : center;
+position : fixed;
+cursor : pointer;
+}
+.closediv {
+display : inline-block;
+}
 
-}
-body{
-	margin: 0;
-}
-.Cont{
-  background-image: url("./background2.jpg"); 
-  background-repeat: no-repeat;
-  height: 100vh;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;	
-  margin: 0;
-}
-.raff{
-position: fixed;
-margin: 0;
-bottom: 50px;
-}
-.rocket{
-position: fixed;
-left: 250px;
-bottom: 50px;
-}
+
