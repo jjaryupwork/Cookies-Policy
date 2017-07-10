@@ -1,15 +1,20 @@
-$('.close').click(function() {
-    $('.cookiesheader').hide();
+$(document).ready(function() {
+    $('#close').hide();
+    $('.text').hide();
+    $('#learnmore').hide();
+    $('.cookies').animate({
+        marginLeft: "+=1700px",
+    }, 6000);
+    $('#close').delay(6000).show(600);
+    $('.text').delay(6000).show(600);
+    $('#learnmore').delay(6000).show(600);
 });
 
-$('#start').click(function() {
-    $('.giraffe').animate({
-        marginLeft: "+=800px",
+$('#close').click(function() {
+    $('#close').hide();
+    $('.text').hide();
+    $('#learnmore').hide();
+    $('.cookies').animate({
+        marginLeft: "+=1700px",
     }, 6000);
-    $('.giraffe').animate({
-        marginLeft: "-=800px",
-    }, 6000);
-    $('.rocket').animate({
-        top: "-=950px",
-    }, 16000);
 });

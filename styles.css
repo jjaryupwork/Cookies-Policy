@@ -31,74 +31,42 @@ align-items : center;
 margin : 0;
 clear : left;
 }
-.giraffe {
-position : fixed;
-margin : 0;
-bottom : 50px;
-}
-.rocket {
-position : fixed;
-left : 250px;
-bottom : 50px;
-}
-.cookiesheader {
-width : 100%;
+.cookies {
+width : 620px;
 font-size : 12px;
-height : 54px;
-background-color : #262626;
+height : 340px;
 z-index : 100;
-line-height : 12px;
-border-bottom : 2px solid white;
 white-space : nowrap;
 position : fixed;
+left: -1000px;
 }
-.infodiv, .closediv, .learnmorediv {
-height : 38px;
-width : 200px;
-display : flex;
-display : inline-block;
-margin : 10px 80px;
-padding : 0 130px;
-text-align : center;
+
+p{
+	font-size: 16px;
+	color: white;
+	display: flex;
+	margin: 20px 10px;
+	float: left;
 }
-.infodiv p {
-display : flex;
-float : left;
-color : white;
-font-size : 12px;
-text-align : center;
-width : 500px;
-cursor : pointer;
-position : fixed;
+.falcon{
+	width: 454px;
+	height: 255px;
+	display: flex;
+	float: left;
 }
-.learnmorediv a {
-display : flex;
-float : left;
-color : white;
-line-height : 32px;
-font-size : 12px;
-text-align : center;
-position : fixed;
-cursor : pointer;
-text-decoration: none;
-border: 1px solid white;
-border-radius: 5px;
+a{
+	font-size: 16px;
+	color: white;
+	position : fixed;
+	text-decoration: none;
+	margin: 20px 10px;
+	float: left;
 }
-.closediv .close {
-color : white;
-font-size : 12px;
-border-left : 1px solid #333333;
-display : flex;
-text-align : center;
-position : fixed;
-cursor : pointer;
+#close 
+{	
+	cursor: pointer;
 }
-.close:hover{
+#close:hover{
 	color: gold;
 	text-transform: gold;
 }
-.closediv {
-display : inline-block;
-}
-
-
