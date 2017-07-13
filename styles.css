@@ -1,72 +1,56 @@
-button {
-position : absolute;
-left : 900px;
-background : #0a97f5;
-background : linear-gradient(0deg, #0d3045, #0a97f5 40%);
-border-radius : 12px;
-font-family : Georgia;
-color : #eaf20c;
-font-size : 28px;
-padding : 10px 10px 10px 10px;
-border : #c8fc1f solid 2px;
-text-decoration : none;
-}
-button:hover {
-background : #052b45;
-background : linear-gradient(0deg, #0a97f5, #0d3045 40%);
-text-decoration : none;
-}
-body {
-margin : 0;
-}
-.Cont {
+body{
 background-image : url("./background2.jpg");
 background-repeat : no-repeat;
-height : 100vh;
 background-size : cover;
-display : flex;
-flex-direction : column;
-justify-content : center;
-align-items : center;
-margin : 0;
-clear : left;
+margin: 0;
 }
-.cookies {
-width : 620px;
-font-size : 12px;
-height : 340px;
-z-index : 100;
-white-space : nowrap;
-position : fixed;
-left: -1000px;
+.slider{
+	margin: 0 auto;
+	width: 100%;
 }
-
-p{
-	font-size: 16px;
-	color: white;
-	display: flex;
-	margin: 20px 10px;
-	float: left;
+.slider_wrapper {
+	margin-bottom: 30px;
+	overflow:hidden;
+	margin: 0 auto;
+	width: 600px;
+	height:  auto;
 }
-.falcon{
-	width: 454px;
-	height: 255px;
-	display: flex;
-	float: left;
+.slider_back {
+	position:  relative;
 }
-a{
-	font-size: 16px;
-	color: white;
-	position : fixed;
+div .slider_back {
+	width: 100%;
+	margin:left;
+}
+.slider_back > img {
+	width: 100%;
+	margin: 0 auto;
+	left: -1100px;
+}
+.slider_text {
+	position:  absolute;
+	top: 80px;
+	left: 150px;
+	width: 300px;
+}
+.slider_text > ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.slider_text > ul > li > h1,
+.slider_text > ul > li > a{
+	display: block;
+	color: black;
 	text-decoration: none;
-	margin: 20px 10px;
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight:  bold;
+	padding-bottom: 48px;
+	margin:0;
 	float: left;
+	clear: left;
 }
-#close 
-{	
-	cursor: pointer;
-}
-#close:hover{
+.slider_text > ul > li > a:hover{
 	color: gold;
-	text-transform: gold;
 }
