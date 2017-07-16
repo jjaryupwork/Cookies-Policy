@@ -1,36 +1,23 @@
 body{
-background-image : url("./background2.jpg");
-background-repeat : no-repeat;
-background-size : cover;
-margin: 0;
-}
-.slider{
-	margin: 0 auto;
-	height: 570px;
-	width: 326px;
-	background-image : url("./rockett.png");
+	background: url("./space.jpg") center no-repeat;
 	background-size : cover;
-	position:  relative;
-	
-
+	margin: 0;
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
 }
-.slider_wrapper {
-	margin-bottom: 30px;
-	overflow:hidden;
-	margin: 0 auto;
+#slider {
 	width: 326px;
-	height:  auto;
-}
-.slider img {
-	/*width: 100%;*/
-	margin: 0 auto;
-}
-#cookie-jar {
+	height: 570px;
+	background: url("./rockett.png") center no-repeat;
+	background-size : cover;
 	position:  absolute;
-	top: 130px;
-	/*left: 150px;*/
-	width: 326px;
-	margin: 0 auto;
+	bottom: -110%;
+	left: calc(50% - 163px);
+}
+
+#cookie-jar {
+	padding-top: 130px;
 }
 #cookie-jar  p,
 #cookie-jar  a{
@@ -48,6 +35,7 @@ margin: 0;
 }
 #cookie-jar a:hover{
 	color: gold;
+	cursor: pointer;
 }
 #cookie-jar  p{
 	padding-right: 70px;

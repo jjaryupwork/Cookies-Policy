@@ -1,17 +1,10 @@
-/*$(document).ready(function() {
-    $('p').hide();
-    $('a').hide();
-    $('.slider').animate({
-        marginBottom: "+=400px",
-    }, 6000);
-    $('p').delay(6000).show(600);
-    $('a').delay(6000).show(600);
+$(document).ready(function() {
+    $('#slider').animate({
+        bottom: '41%'
+    }, 2500);
 });
-
 $('.close').click(function() {
-    $('p').hide();
-    $('a').hide();
-    $('.slider').animate({
-        marginBottom: "+=400px",
-    }, 6000);
-});*/
+    $('#slider').animate({
+        bottom: "110%"
+    }, 3000);
+}); 
