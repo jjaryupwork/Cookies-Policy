@@ -1,17 +1,17 @@
 /*$(document).ready(function() {
-    $('h1').hide();
+    $('p').hide();
     $('a').hide();
-    $('img').animate({
-        marginLeft: "+=1300px",
+    $('.slider').animate({
+        marginBottom: "+=400px",
     }, 6000);
-    $('h1').delay(6000).show(600);
+    $('p').delay(6000).show(600);
     $('a').delay(6000).show(600);
 });
 
 $('.close').click(function() {
-    $('h1').hide();
+    $('p').hide();
     $('a').hide();
-    $('img').animate({
-        marginLeft: "+=1300px",
+    $('.slider').animate({
+        marginBottom: "+=400px",
     }, 6000);
-});/*
+});*/
