@@ -1,56 +1,67 @@
-body{
-	background: url("./space.jpg") center no-repeat;
-	background-size : cover;
-	margin: 0;
-	overflow: hidden;
-	width: 100vw;
-	height: 100vh;
+body {
+    background: url("./space.jpg") center no-repeat;
+    background-size: cover;
+    margin: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
 }
 #slider {
-	width: 326px;
-	height: 570px;
-	background: url("./rockett.png") center no-repeat;
-	background-size : cover;
-	position:  absolute;
-	bottom: -110%;
-	left: calc(50% - 163px);
+    width: 30vmin;
+    background: url("./rockett.png") center no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: calc(50% - 15vmin);
+    bottom: 50vh;
+    transform: translateY(100vh);
+    transition: transform 1s;
 }
-
+#slider.land {
+    transform: translateY(0);
+}
+#slider.fly {
+    transition-duration: 2s;
+    transform: translateY(-100vh);
+}
+#slider:after {
+    content: '';
+    display: block;
+    padding-bottom: calc(570 / 326 * 100%);
+}
 #cookie-jar {
-	padding-top: 130px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 12vmin 5.5vmin;
+    font-size: 1.4vmin;
+    line-height: 1;
 }
-#cookie-jar  p,
-#cookie-jar  a{
-	padding-right: 35px;
-	padding-left: 55px;
-	display: block;
-	text-decoration: none;
-	font-family: sans-serif;
-	font-size: 14px;
-	font-weight:  bold;
-	padding-bottom: 100px;
-	margin:0;
-	float: left;
-	text-align: center;
+#cookie-jar p,
+#cookie-jar a {
+    display: block;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
 }
-#cookie-jar a:hover{
-	color: gold;
-	cursor: pointer;
+#cookie-jar a:hover {
+    color: gold;
+    cursor: pointer;
 }
-#cookie-jar  p{
-	padding-right: 70px;
-	padding-left: 70px;
-	color: black;
+#cookie-jar p {
+    color: black;
+    padding-bottom: 11vmin;
 }
-a:first-child { 
-    color:green;
+a#more {
+    float: left;
+    color: green;
 }
-a:last-child { 
-    color:red;
+a#close {
+    float: right;
+    color: red;
 }
 a:visited {
     color: green;
-}
-.space{
-	height: 100%;
 }
